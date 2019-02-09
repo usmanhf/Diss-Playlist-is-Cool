@@ -20,6 +20,7 @@
     border: solid;
     border-color: grey;
     border-radius: 6px;
+    box-shadow: 2px 4px black;
 }
 
 #submit-button {
@@ -28,6 +29,17 @@
     border: solid;
     border-color: grey;
     border-radius: 6px;
+    box-shadow: 2px 4px black;
+}
+
+#submit-button:hover,
+#submit-button:active,
+#submit-button:focus {
+    background-color: lightblue;
+    position: relative;
+    left: 1px;
+    top: 2px;
+    box-shadow: 1px 2px black;
 }
 
 #submit-button-img {
