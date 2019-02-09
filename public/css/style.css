@@ -34,6 +34,16 @@
     height: 40px;
 }
 
+#footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 3px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
 @media only screen and (max-width: 750px) {
     #view {
         width: 335px;
