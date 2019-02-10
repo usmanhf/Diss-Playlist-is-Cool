@@ -33,13 +33,20 @@
 }
 
 #submit-button:hover,
-#submit-button:active,
 #submit-button:focus {
     background-color: lightblue;
     position: relative;
     left: 1px;
     top: 2px;
     box-shadow: 1px 2px black;
+}
+
+#submit-button:active {
+    background-color: lightblue;
+    position: relative;
+    left: 2px;
+    top: 4px;
+    box-shadow: none;
 }
 
 #submit-button-img {
