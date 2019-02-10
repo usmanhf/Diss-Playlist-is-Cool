@@ -1,6 +1,6 @@
 var redirect = function () {
     const client_id = 'a306c77b15cc46b7a80ed913f4a4a206';
-    const redirect_uri = encodeURIComponent('https://' + self.location.host + '/callback');
+    const redirect_uri = encodeURIComponent('https://' + self.location.host + '/Diss-Playlist-is-Cool/callback');
     const scope = encodeURIComponent('playlist-modify-public playlist-modify-private');
     const response_type = 'token';
     const state = encodeURIComponent(document.getElementById('text-field').value);
