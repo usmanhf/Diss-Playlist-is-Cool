@@ -50,11 +50,11 @@ if (window.location.hash) {
 }
 
 var makePlaylist = function (accessToken, words, tracks) {
-    let songs = []; // song URIs in order of words in text
+    let track_uris_encoded = []; // song URIs in order of words in text
     for (let i = 0; i < words.length; i++) {
-        songs.push(tracks[words[i]]);
+        track_uris_encoded.push(encodeURIComponent(tracks[words[i]]));
     }
-    const uris = songs.join(',');
+    const track_uris_str = track_uris_encoded.join(',');
 
     // Get user id
     let id;
@@ -85,7 +85,7 @@ var makePlaylist = function (accessToken, words, tracks) {
     requestAddTracks.onload = function() {
         console.log(requestAddTracks.responseText);
     }
-    requestAddTracks.open('POST', tracksEndpoint + '?uris=' + uris, false);
+    requestAddTracks.open('POST', tracksEndpoint + '?uris=' + track_uris_str, false);
     requestAddTracks.setRequestHeader('Authorization', 'Bearer ' + accessToken);
     requestAddTracks.send();
 }
