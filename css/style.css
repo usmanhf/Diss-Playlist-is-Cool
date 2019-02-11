@@ -3,7 +3,7 @@
 }
 
 #view {
-    width: 650px;
+    width: 90%;
     margin: auto;
 }
 
@@ -11,12 +11,15 @@
     text-align: center;
 }
 
-#input-wrapper {
-    text-align: center;
+#input-form {
+    display: flex;
+    justify-content: center;
 }
 
 #text-field {
     font-size: 40pt;
+    max-width: 70%;
+
     border: solid;
     border-color: grey;
     border-radius: 6px;
@@ -24,8 +27,10 @@
 }
 
 #submit-button {
-    background-color: white;
     font-size: 40pt;
+    margin-left: 10px;
+
+    background-color: white;
     border: solid;
     border-color: grey;
     border-radius: 6px;
@@ -34,40 +39,40 @@
 
 #submit-button:hover,
 #submit-button:focus {
-    background-color: lightblue;
     position: relative;
     left: 1px;
     top: 2px;
+
+    background-color: lightblue;
     box-shadow: 1px 2px black;
 }
 
 #submit-button:active {
-    background-color: lightblue;
     position: relative;
     left: 2px;
     top: 4px;
+
+    background-color: lightblue;
     box-shadow: none;
 }
 
 #submit-button-img {
+    width: 40px;
     height: 40px;
 }
 
 #footer {
     position: absolute;
     width: 100%;
-    text-align: center;
     bottom: 3px;
     left: 0px;
     margin: 0px;
     padding: 0px;
+
+    text-align: center;
 }
 
 @media only screen and (max-width: 750px) {
-    #view {
-        width: 335px;
-    }
-
     #text-field {
         font-size: 20pt;
     }
@@ -77,28 +82,7 @@
     }
 
     #submit-button-img {
+        width: 20px;
         height: 20px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #view {
-        width: 200px;
-    }
-
-    #heading {
-        text-align: left;
-    }
-
-    #text-field {
-        font-size: 10pt;
-    }
-
-    #submit-button {
-        font-size: 10pt;
-    }
-
-    #submit-button-img {
-        height: 10px;
     }
 }

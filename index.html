@@ -10,14 +10,12 @@
             <h1>Diss Playlist is Cool</h1>
             <h4>Make a Spotify playlist of songs whose titles are the words you type below!</h4>
         </div>
-        <div id="input-wrapper">
-            <form onsubmit="return redirect();">
-                <input id="text-field" type="text" autocomplete="off" autofocus>
-                <button id="submit-button" type="submit">
-                    <img id="submit-button-img" src="images/icons8-spotify.svg" alt="music icon">
-                </button>
-            </form>
-        </div>
+        <form id="input-form" onsubmit="return redirect();">
+            <input id="text-field" type="text" autocomplete="off" autofocus>
+            <button id="submit-button" type="submit">
+                <img id="submit-button-img" src="images/icons8-spotify.svg" alt="music icon">
+            </button>
+        </form>
     </div>
     <footer id="footer">
         <a href="https://icons8.com/icon/46841/spotify">Spotify icon by Icons8</a>
