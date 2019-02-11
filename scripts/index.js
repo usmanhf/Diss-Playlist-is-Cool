@@ -17,4 +17,5 @@ var redirect = function () {
         '&response_type=' + response_type +
         '&state=' + state
     );
+    return false;
 }
