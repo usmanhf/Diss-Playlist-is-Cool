@@ -52,7 +52,9 @@ if (window.location.hash) {
 var makePlaylist = function (accessToken, words, tracks) {
     let track_uris_encoded = []; // song URIs in order of words in text
     for (let i = 0; i < words.length; i++) {
-        track_uris_encoded.push(encodeURIComponent(tracks[words[i]]));
+        if (tracks[words[i]]) {
+            track_uris_encoded.push(encodeURIComponent(tracks[words[i]]));
+        }
     }
     const track_uris_str = track_uris_encoded.join(',');
 
