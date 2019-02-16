@@ -1,5 +1,9 @@
 * {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 223, 234)
 }
 
 #view {
